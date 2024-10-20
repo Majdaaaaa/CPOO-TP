@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Adapter extends RGBImageViewer {
 
+    private RGBAImage image;
+
     public Adapter(RGBAImage image) {
         super(convertToRGBImage(image));
     }
