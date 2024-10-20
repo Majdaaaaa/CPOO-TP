@@ -87,7 +87,7 @@ public class RingImmuable {
     
         @Override
         public int[] getCoefficients() {
-            return this.coef.clone();
+            return this.coef.clone(); //Copie défensive conseillé par Copilot
         }
     
         public PolyImmuable setCoefficients(int[] c) {
