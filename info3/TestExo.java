@@ -1,16 +1,19 @@
-import exo1.Poly;
+import exo1.Upoly;
 
 public class TestExo {
     public static void main(String[] args) {
-        int[] coefficients = {3, 2, 5,4};
+        int[] coefficients = {3, 2, 5,1};
 
-        // Création d'un objet Poly
-        Poly polynome = new Poly(coefficients);
+        Upoly c = new Upoly(coefficients);
 
-        // Affichage des coefficients
-        System.out.println(polynome);
+        System.out.println(c);
 
-        // Affichage du degré du polynôme
-        System.out.println("Degré du polynôme : " + polynome.getDegree());
+        c.setAk(c.getDegree(), 1);
+
+
+        System.out.println(c);
+
+        System.out.println(c instanceof Upoly);
+        //OUI IL EST TOUJOURS DE TYPE UPOLY
     }
 }

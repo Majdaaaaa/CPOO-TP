@@ -18,12 +18,17 @@ public class Poly {
         this.A = coefficients;
     }
 
+    public void setAk(int i,int coef){
+        this.A[i]=coef;
+    }
+
     public int getDegree() {
         return degree;
     }
 
     public String toString() {
         String t = "";
+        t+="Degré du polynôme : " + this.getDegree()+"\n";
         for (int i = 0; i < degree +1; i++) {
             if (i == degree) {
                 t += " + " + A[i] + "X^" + i;
